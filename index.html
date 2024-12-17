@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio website.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5eb4b4e32f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo6.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark menu" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-landmark menu" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>JAVA Developer</p>
+                <h1>Hi there, <br>
+                    I'm <span id="text1">Utsav Rajput</span>
+                    <!-- -----text2 for small screen------ -->
+                    <div id="text2">
+                        <span>Utsav</span><br> <span>Rajput</span>
+                    </div>
+                    <br>From India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title about">About Me</h1>
+                    <p>A passionate and detail-oriented Java Developer with a strong foundation in Object-Oriented Programming, core Java and advance java concepts. Proficient in J2EE, with hands-on experience in building small-scale projects using Java frameworks like Spring,Spring boot and Hibernate.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        <li><span>Coding</span><br>Problem Solving</li>
+
+                        <li><span>Frontend Development</span><br>Web App Development </li>
+
+                        <li><span>Backend Development</span><br>Web App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                        <li><span>01/July/2024 - 01/Aug/2024</span><br>Internship at Ardent Com. Pvt Lmt.</li>
+
+                        <li><span>01/July/2024 - 01/Aug/2024</span><br>Industrial Traning in Industry Based Project at Ardent</li>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                        <li><span>Pursuing Graduation/2022-Expected:2025</span><br>BCA from BCET Durgapur,West Bengal</li>
+
+                        <li><span>Intermediate Examination/2022</span><br>12th Standerd from R.P.S. College,Vaishali,Bihar</li>
+
+                        <li><span>Secondary Examination/2020</span><br>10th Standerd from H.S.B,Vaishali,Bihar</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------------services------------------  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title ">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Devlopment</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit earum in magni, maxime aliquam minima eveniet, quibusdam quas illo unde alias aliquid porro! Veritatis doloremque ullam ex ad placeat?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <h2>Frontend Devlopment</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit earum in magni, maxime aliquam minima eveniet, quibusdam quas illo unde alias aliquid porro! Veritatis doloremque ullam ex ad placeat?</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Backend Devlopment</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam suscipit earum in magni, maxime aliquam minima eveniet, quibusdam quas illo unde alias aliquid porro! Veritatis doloremque ullam ex ad placeat?</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------portfolio-------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title ">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Hospital Mang. System</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum odio deleniti excepturi molestias.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Virtual AI Assistent</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum odio deleniti excepturi molestias.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>AI-ChatBot</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum odio deleniti excepturi molestias.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- ------------------contact-------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+            <div class="contact-left">
+                <div class="sub-title">Contact Me</div>
+                <p><i class="fa-solid fa-envelope"></i>utsavftk2004@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+91 9508152551</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://t.me/boost/utsavportfolio" target="_blank"><i class="fa-brands fa-telegram"></i></a>  
+                </div>
+                <a href="images/Utsav's Resume sells.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 ">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p></p>
+            <p>Made with <i class="fa-solid fa-fire" id="i2"></i> By Utsav. Copyright <i class="fa-regular fa-copyright"></i>2024 Utsav Portfolio.  </p>
+        </div>
+    </div>
+
+<!-- ------------------js code----------------------- -->
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+<!-- ----------------js for small screen-------------- -->
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <!-- ---------------------- for google sheet massege----------------- -->
+    <!--  
+    1> open gsheet and save file name
+    2> first row one by one write name type in html massege form(Name,email and Massege)
+    3> tap extentions them tap apps script
+    4> in apps script also save file name what you save in g-sheet
+    5> then  delete the and write this code or github link first code 
+        https://github.com/jamiewilson/form-to-google-sheets
+    
+    6> save and run allow permission go to advance then tap g-sheet name
+    7> tap deploy select web app then save name then mail as it is then chose anyone then done
+    8> copy url and go to github link and copy 6th code and 
+    9> go to vs code js file paste then change or paste url in script code see below
+    -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw3riL6nUihg0s29ewv5B5lwoMFPVI-9OJt6RIWl8Jg3G1V-6URtgwcj_ZRxsMys8a1-w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Massege sent successfully";
+                setTimeout(function(){
+                    msg.innerHTML = ''
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
